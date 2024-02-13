@@ -1,13 +1,10 @@
-// Code for Practicum 17 (More on Operator Precedence)
-// (TO COMPLETE)
 import java.util.Scanner;
 
-class Main {
+public class Main {
   public static void main(String[] args) {
     double var1, var2, var3, var4;
     double result;
 
-    // init
     var1 = 10.0;
     var2 = 2.0;
     var3 = 5.0;
@@ -18,16 +15,16 @@ class Main {
     System.out.println("result = " + result);
 
     // should display the value 0.2
-    result = var1 * var2 / var3 * var4;
+    result = var1 * var2 / (var3 * var4);
     System.out.println("result = " + result);
-    
+
     // should display the value 1.0
     result = var1 / var2 / var3;
     System.out.println("result = " + result);
 
     // should display the value 25.0
-    result = var1 / var2 / var3;
+    result = var1 / (var2 / var3);
     System.out.println("result = " + result);
-    
+
   }
 }
